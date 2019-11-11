@@ -25,8 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
-  console.log('Welcome to C308 Lesson 04 quiz!');
-  console.log('Your component here');
+  console.log("I'm a console statement!");
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -42,14 +41,29 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Set Pickup Time</Text>
+              <Text style={styles.sectionTitle}>Recommended Eats @ RP</Text>
               <Text style={styles.sectionDescription}>
-                Set a time you would like us to arrive at your pickup location
+                <Text style={styles.highlight}>Sweet Tooth Waffles</Text> has waffles with conrflakes and chocolate spread, other than usual fillings such as kaya and peanut butter
               </Text>
+              <Text style={styles.highlight}>W6 Level 1, E-canteen</Text>
+            </View>
+            <View style={styles.sectionContainer}>
               <Text style={styles.sectionDescription}>
-              <Text style={styles.highlight}>RP Furniture Shop</Text>
+                <Text style={styles.highlight}>Crowded Bowl</Text> serves DIY vegetarian salad bowls. Pasta, potato salad and olive fried rice are some of the options available
+              </Text>
+              <Text style={styles.highlight}>W4/W6 Lawn Canteen</Text>
+            </View>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionDescription}>
+                <Text style={styles.highlight}>Chicken Rice Stall @ Koufu</Text> sells one of the best and afforadble chicken rice in RP. With the food portion and its price makes it a favourite for many.
               </Text>
             </View>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionDescription}>
+                <Text style={styles.highlight}>Indo Mee Goreng</Text> has a long queue for its special Indo Mee Goreng. Although it is simply it is rich in flavour and satisfaction that fills many students stomach.
+              </Text>
+            </View>
+            <LearnMoreLinks />
           </View>
         </ScrollView>
       </SafeAreaView>
